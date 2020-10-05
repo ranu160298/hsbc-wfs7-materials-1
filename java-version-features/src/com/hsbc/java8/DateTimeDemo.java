@@ -13,6 +13,7 @@ public class DateTimeDemo {
 		System.out.println("Date & Time: "+dateTime);
 		
 		System.out.println("Format Date & Time: "+dateTime.format(DateTimeFormatter.ofPattern("dd/MM/yyyy 'T' hh:mm:ss")));
+	
 	}
 
 }
