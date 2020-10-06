@@ -14,11 +14,11 @@ public class CollectionBackedAccountDaoImpl implements AccountDao {
 		return account;
 	}
 
-	@Override
-	public Account updateBalance(int accountNumber, double amount) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+//	@Override
+//	public Account updateBalance(int accountNumber, double amount) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
 
 	@Override
 	public Account getAccount(int accountNumber) {
@@ -30,6 +30,24 @@ public class CollectionBackedAccountDaoImpl implements AccountDao {
 	public List<Account> getAccounts() {
 		// TODO Auto-generated method stub
 		return database;
+	}
+
+	@Override
+	public Account debit(int accountNumber, double amount) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Account credit(int accountNumber, double amount) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteAccount(int accountNumber) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

@@ -15,7 +15,8 @@ public class MainViewController {
 		AccountService service = ObjectFactory.getAccountServiceInstance();
 		do {
 			System.out.println("1: Create Account 2: Check Balance");
-			System.out.println("3: Transfer Amount 4: Sort Accounts by name 5: Sort Accounts by account number 0: Exit");
+			System.out.println("3: Transfer Amount 4: Sort Accounts by name 5: Sort Accounts by account number 6: Delete Account"
+					+ "0: Exit");
 			option = scanner.nextInt();
 			List<Account> list = null;
 			switch(option) {
