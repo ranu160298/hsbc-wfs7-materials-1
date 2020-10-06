@@ -13,7 +13,7 @@ public class EmployeeMain {
 		Scanner scanner = new Scanner(System.in);
 		EmployeeDao dao = new EmployeeDao();
 		do {
-			System.out.println("1: Store 2: Sort 0: Exit");
+			System.out.println("1: Store 2: Sort  3: Top3 Employees 0:Exit");
 			option = scanner.nextInt();
 			switch(option) {
 			case 1 : 
@@ -44,6 +44,14 @@ public class EmployeeMain {
 					System.out.println(employees);
 				} if (option == 4) {
 					
+				}
+				break;
+			case 3:
+				System.out.println("Top3 employees based on dob, id and salary");
+				String type = scanner.next(); 
+				employees = dao.getTop3Employees(type);
+				for(Employee e : employees) {
+					System.out.println(e);
 				}
 				break;
 			}
