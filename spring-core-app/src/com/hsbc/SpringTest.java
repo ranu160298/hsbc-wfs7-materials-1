@@ -12,11 +12,19 @@ public class SpringTest {
 //		System.out.println("Password = "+utility.getPassword());
 //		utility.getConnection();
 		
-		AccountDao accountDao = (AccountDao)context.getBean("dao");
-		accountDao.createAccount();
-		accountDao.getAccounts();
+		// Service Code
+//		AccountDao accountDao = (AccountDao)context.getBean("dao");
+//		accountDao.createAccount();
+//		accountDao.getAccounts();
 		
+		// Controller Code
 		
+		AccountService service = (AccountService) context.getBean("service");
+		service.createAccount();
+		System.out.println("**************************************");
+		service.getAccounts();
+		System.out.println("**************************************");
+		service.getAccountsSortByName();
 	}
 
 }

@@ -6,6 +6,11 @@ public class JdbcBackedDao implements AccountDao {
 
 	private DBUtility dbutility;
 	
+	public JdbcBackedDao(DBUtility dbutility) {
+		this.dbutility = dbutility;
+		System.out.println("JdbcBackedDao(DBUtility)");
+	}
+	
 	public void setDbutility(DBUtility dbutility) {
 		this.dbutility = dbutility;
 	}

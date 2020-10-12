@@ -15,6 +15,15 @@
 
 	<bean id = "dao" class = "com.hsbc.JdbcBackedDao">
 		<property name = "dbutility" ref = "db"></property>
+		<!-- <constructor-arg index = "0" ref = "db"></constructor-arg> -->
 	</bean>	
 
+ 
+	<!--  <bean id = "dao" class = "com.hsbc.HibernateBackedDao">
+	 	<property name = "dbutility" ref = "db"></property>
+	 </bean> -->
+	 
+	 <bean id = "service" class = "com.hsbc.AccountServiceImpl">
+	 	<property name = "accountDao" ref = "dao"></property>
+	 </bean>
 </beans>
