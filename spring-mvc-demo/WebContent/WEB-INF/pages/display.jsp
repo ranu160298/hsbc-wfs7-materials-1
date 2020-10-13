@@ -16,5 +16,12 @@
 		<input type = "submit" value = "Search">
 	</label>
 	</form>
+	<hr />
+	<form action = "userByName" method = "post">
+	<label>
+		Enter Name <input type = "text" name = "userid"> 
+		<input type = "submit" value = "Search">
+	</label>
+	</form>
 </body>
 </html>

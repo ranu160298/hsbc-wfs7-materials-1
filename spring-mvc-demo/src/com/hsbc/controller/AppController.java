@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.hsbc.model.beans.User;
 import com.hsbc.model.service.UserService;
 
 @Controller
@@ -31,6 +32,12 @@ public class AppController {
 	public ModelAndView getUser(@RequestParam("userid") int id) {
 		String username = service.fetchUser(id);
 		ModelAndView modelAndView = new ModelAndView("demo", "name", username);
+		return modelAndView;
+	}
+	@RequestMapping(value = "/userByName", method = RequestMethod.POST)
+	public ModelAndView getUser(@RequestParam("userid") String name) {
+		User user = service.fetchUser(name);
+		ModelAndView modelAndView = new ModelAndView("demo", "obj", user);
 		return modelAndView;
 	}
 }

@@ -8,5 +8,9 @@
 </head>
 <body>
 	<h2>Hello ${name}</h2>
+	<h3>User Details</h3>
+	<h4>
+		Name : ${obj.username} and age: ${obj.age}
+	</h4>
 </body>
 </html>
