@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./xyz.component.css']
 })
 export class XyzComponent  {
-
-  
-
+  name = "Alexandar";
+  dob = "1999-10-18";
 }

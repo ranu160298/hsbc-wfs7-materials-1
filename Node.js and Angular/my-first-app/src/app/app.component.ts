@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { USER, USERNAME, USER_ARRAY } from './mock';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Kishor';
-  message = 'Welcome to angular program';
+  title = "Simple Demo";
+  name = USERNAME;
+  profile = USER; // {"name" & "dob"}
+  
 }
