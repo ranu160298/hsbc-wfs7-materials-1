@@ -9,5 +9,5 @@ export class ParentComponent {
 
   parentName = "Alexandar";
   names = ["Alex", "Bruce", "Chandler", "David"];
-  
+  childCounter : number = undefined;
 }

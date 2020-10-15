@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -8,4 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ChildComponent  {
   @Input()
   childName = undefined;
+
+  counter : number = 0;
+  @Output()
+  counterEvent : EventEmitter<number> = new EventEmitter<number>();
+  
+  incrementCounter() {
+    this.counter++;
+    this.counterEvent.emit(this.counter);
+  }
 }
