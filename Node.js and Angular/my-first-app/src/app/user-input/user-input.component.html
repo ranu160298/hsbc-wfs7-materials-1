@@ -6,7 +6,8 @@
             (input) = "handleKeyInput(u.value)"> <br />
         Password <input type = "password" name = "pw" #p 
             (input) = "enableButton(p.value)"> <br />
-        <input type = "button" value = "Login" [disabled] = "isDisabled" (click) = "handleButton(u.value, p.value)">
+        <input type = "button" value = "Login" [disabled] = "isDisabled" 
+        (click) = "handleButton(u.value, p.value)">
     </form>
     <h3>Entered Username: {{username}} and Password: {{password}}</h3>
 </div>
