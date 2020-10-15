@@ -1,0 +1,14 @@
+<div>
+    <h3>Login Form Demo</h3>
+    <form (ngSubmit) = "handleLogin()" #loginForm = "ngForm">
+        <label>Username <input type = "text" [(ngModel)] = "username" name = "user" 
+            autocomplete="off" required></label> <br/>
+        <label>Password <input type = "password" [(ngModel)] = "password" 
+            name = "pass" required></label> <br/>
+        <input type = "submit" value = "Login" [disabled] = "loginForm.invalid">
+    </form>
+    <h4 style = "color:red" [hidden] = "loginForm.valid">Form is invalid</h4>
+    Login Form Value {{loginForm.value | json}} <br />
+    Login Form Valid {{loginForm.valid}} <br />
+    Login Form Invalid {{loginForm.invalid}}
+</div>

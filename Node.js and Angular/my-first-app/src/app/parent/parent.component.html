@@ -1,0 +1,12 @@
+<div>
+    <div style = "text-align: center;">
+        <h2>This is parent component</h2>
+        <input type = "text" name = "pn" [(ngModel)] = "parentName">
+        <h2>Parent Component name : {{parentName}}</h2>
+        <h3>Child Counter : {{childCounter}}</h3>
+    </div>
+    <hr />
+    <app-child [childName] = "parentName" (counterEvent) = "childCounter = $event"></app-child>
+    <hr />
+    
+</div>
