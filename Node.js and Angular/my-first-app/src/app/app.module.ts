@@ -9,7 +9,8 @@ import { UserInputComponent } from './user-input/user-input.component';
 import { FormsModule } from '@angular/forms';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
-import { NamesItemComponent } from './names-item/names-item.component'
+import { NamesItemComponent } from './names-item/names-item.component';
+import { LoginComponent } from './login/login.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NamesItemComponent } from './names-item/names-item.component'
     UserInputComponent,
     ParentComponent,
     ChildComponent,
-    NamesItemComponent
+    NamesItemComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule, FormsModule
