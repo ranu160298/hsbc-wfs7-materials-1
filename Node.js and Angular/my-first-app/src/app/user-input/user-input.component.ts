@@ -17,10 +17,7 @@ export class UserInputComponent {
     this.password = p;
     console.log('handleButton() called');
   }
-  handleKeyInput(u) {
-    console.log('handleInput() called: '+u)
-  }
-  enableButton(p:string) {
+  enableButton(p: string) {
     if(p.length >= 3) {
       this.isDisabled = false;
     } else {
