@@ -9,5 +9,6 @@ export const USER_ARRAY : any = [
 ];
 
 
+
 // you can import variables also using
 // `import {username, user, userArray} from ./mock`
