@@ -9,6 +9,6 @@ import { USER, USERNAME, USER_ARRAY } from './mock';
 export class AppComponent {
   title = "Simple Demo";
   name = USERNAME;
-  profile = USER; // {"name" & "dob"}
-  
+  profile : any = USER; // {"name" & "dob"}
+  profileArray : any = USER_ARRAY;
 }

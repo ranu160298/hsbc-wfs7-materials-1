@@ -3,5 +3,8 @@
   <h3>Title is: {{title}}</h3>
   <h3>Name is : {{name}}</h3>
   <h3>Profile Name is : {{profile.name}} and Birthday is on {{profile.dob}}</h3>
- 
+  <h3>Number of profiles are {{profileArray.length}}</h3>
+  <h4 *ngFor = "let profile of profileArray">
+    Name: {{profile.name}} and Dob: {{profile.dob}}
+  </h4>
 </div>
