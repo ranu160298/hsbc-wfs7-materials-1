@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { XyzComponent } from './xyz/xyz.component';
 import { ProfileDisplayComponent } from './profile-display/profile-display.component';
 import { UserInputComponent } from './user-input/user-input.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { UserInputComponent } from './user-input/user-input.component';
     UserInputComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
