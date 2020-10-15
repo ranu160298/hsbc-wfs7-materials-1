@@ -10,6 +10,8 @@ export class UserInputComponent {
   username  = undefined;
   password = undefined;
 
+  isDisabled = true;
+
   handleButton(u, p) {
     this.username = u;
     this.password = p;
@@ -18,5 +20,11 @@ export class UserInputComponent {
   handleKeyInput(u) {
     console.log('handleInput() called: '+u)
   }
-
+  enableButton(p:string) {
+    if(p.length >= 3) {
+      this.isDisabled = false;
+    } else {
+      this.isDisabled = true;
+    }
+  }
 }
