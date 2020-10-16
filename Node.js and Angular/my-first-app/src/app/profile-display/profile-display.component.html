@@ -3,11 +3,12 @@
     <button (click) = "handleClick()" class = "btn btn-primary">Show Profiles</button>
     <table class = "table">
         <tr>
+            <th>Id</th>
             <th>Name</th>
             <th>Dob</th>
         </tr>
         <tr *ngFor = "let user of userCollection">
-            <td>{{user.name}}</td><td>{{user.dob}}</td>
+            <td>{{user.userId}}</td><td>{{user.name}}</td><td>{{user.dob}}</td>
         </tr>
     </table>
 </div>

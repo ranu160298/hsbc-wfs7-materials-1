@@ -10,21 +10,16 @@ import { FormsModule } from '@angular/forms';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { NamesItemComponent } from './names-item/names-item.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
-    AppComponent,
-    XyzComponent,
-    ProfileDisplayComponent,
-    UserInputComponent,
-    ParentComponent,
-    ChildComponent,
-    NamesItemComponent,
-    LoginComponent
+    AppComponent,    XyzComponent,     ProfileDisplayComponent,     UserInputComponent,
+    ParentComponent,     ChildComponent,     NamesItemComponent,     LoginComponent
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule, FormsModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
