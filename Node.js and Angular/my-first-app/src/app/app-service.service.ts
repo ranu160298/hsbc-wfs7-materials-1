@@ -17,4 +17,9 @@ export class AppServiceService {
     let fetchUsersUrl = `${this.baseUrl}/users`;
     return this.http.get(fetchUsersUrl);
   }
+
+  storeUser(user : any) : Observable<any> {
+    let storeUrl = `${this.baseUrl}/store`
+    return this.http.post(storeUrl, user);
+  }
 }
