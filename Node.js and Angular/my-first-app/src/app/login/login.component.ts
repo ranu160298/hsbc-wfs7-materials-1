@@ -14,5 +14,8 @@ export class LoginComponent {
     console.log('handle login');
     console.log("Username = "+this.username, "Password = "+this.password);
   }
+  handleSubmit(formValues : any) {
+    console.log(formValues);
+  }
 
 }
