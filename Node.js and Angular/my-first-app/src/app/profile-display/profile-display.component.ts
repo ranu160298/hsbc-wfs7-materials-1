@@ -18,4 +18,5 @@ export class ProfileDisplayComponent  {
         console.log(response);
       });
   }
+  
 }
