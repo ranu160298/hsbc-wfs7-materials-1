@@ -11,6 +11,11 @@ export class ProfileDisplayComponent  {
   constructor(private service: AppServiceService) {}
 
   handleClick() {
-    this.userCollection = this.service.fetchUsers();
+    //this.userCollection = this.service.fetchUsers();
+    this.service.fetchUsers()
+      .subscribe((response) => {
+        this.userCollection = response
+        console.log(response);
+      });
   }
 }
