@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -9,13 +11,23 @@ export class LoginComponent {
 
   username = undefined;
   password = undefined;
-
-  handleLogin() {
-    console.log('handle login');
-    console.log("Username = "+this.username, "Password = "+this.password);
+  // supply the router instance through constructor injection
+  constructor(private _router : Router) {
+    console.log("login component loaded")
   }
+  
   handleSubmit(formValues : any) {
-    console.log(formValues);
+    //you must call the service method to authenticate
+    let user = formValues.user;
+    let pass = formValues.pass;
+    if(pass == '1234') {
+      // the url will be /success/user i.e., /success/Alex or /success/Bruce it binds to /success/:username
+      this._router.navigate(["/success", user]);
+    } else {
+      this.username = undefined;
+      this.password = undefined;
+      this._router.navigate(["/login"]);
+    }
   }
 
 }

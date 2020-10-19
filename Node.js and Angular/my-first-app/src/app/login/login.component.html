@@ -20,26 +20,16 @@
                     <div class = "alert alert-danger" [hidden] = "pw.valid||pw.pristine">Password is required</div>
                 </div>
             </div>
+            <br />
             <div class = "row">
                 <div class = "col-3">
                     <input type = "submit" value = "Login" class = "btn btn-primary">
                 </div>
             </div>
         </form>
-        <div>
-            <h3>Value of the Form {{login.value}}</h3>
-            <h2>Understandign of ngModel properties</h2>
-            <h3>un ngModel</h3>
-            <p>Un Valid: {{un.valid}}</p>
-            <p>Un InValid: {{un.invalid}}</p>
-            <p>Un Value: {{un.value}}</p>
-            <p>Un Pristine: {{un.pristine}}</p>
-            <h3>pw ngModel</h3>
-            <p>Pw Valid: {{pw.valid}}</p>
-            <p>Pw InValid: {{pw.invalid}}</p>
-            <p>Pw Value: {{pw.value}}</p>
-            <p>Pw Pristine: {{pw.pristine}}</p>
-        </div>
+        <br />
+        <!-- the link that takes you to register-->
+        <a routerLink = "/register">Create User</a>
     </div>
         
 </div>
