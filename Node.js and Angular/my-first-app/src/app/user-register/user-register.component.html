@@ -1,4 +1,4 @@
-<div class = "container-fluid alert alert-primary">
+<div class = "container-fluid">
     <h3>Registration Form</h3>
     <hr />
     <h4 *ngIf = "message">Status: {{message}}</h4>
@@ -30,8 +30,10 @@
                 </div>
             </div>
             <div class = "row">
-                <input type = "submit" value = "Register" class = "alert alert-dark">
+                <input type = "submit" value = "Register" class = "alert alert-primary">
             </div>
         </form>
+        <br />
+        <a routerLink = "/login">Login</a>
     </div>
 </div>
