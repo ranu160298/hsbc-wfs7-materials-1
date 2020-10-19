@@ -1,17 +1,29 @@
 <div class = "container-fluid">
   <h2 class = "alert alert-primary text-center">Angular Framework Demo!</h2>
   
+  <div class = "row">
+    <div class = "col-5">
+      <a routerLink = "register" class = "btn btn-primary">Register</a> <br /> <br />
+      <a routerLink = "login" class = "btn btn-primary">Login</a> <br /> <br />
+      <a routerLink = "profileDisplay" class = "btn btn-primary">Profile Display</a> <br /> <br />
+      <a routerLink = "parentChild" class = "btn btn-primary">Parent and Child</a> <br /> <br />
+    </div>
+    <div class = "col-6">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  
   <!-- <app-profile-display></app-profile-display> -->
   <!-- <app-user-input></app-user-input> -->
   <!-- <app-parent></app-parent> -->
-  <div class = "row">
+  <!-- <div class = "row">
    <div class = "col-6">
     <app-user-register></app-user-register>
    </div> 
    <div class = "col-6">
     <app-profile-display></app-profile-display>
    </div>
-  </div>
+  </div> -->
   
 
 </div>
